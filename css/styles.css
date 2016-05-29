@@ -1,0 +1,189 @@
+@import "http://fonts.googleapis.com/css?family=Roboto:400,700,400italic";
+
+body {
+	font-family:'Roboto',sans-serif;
+	background-color:#f3f3f3
+}
+
+.gateway-container {
+	margin:auto;
+	width:95%;
+	height:100%
+}
+
+.main {
+	background-color:#fff;
+	-webkit-box-shadow:0 0 10px 2px #ccc;
+	-moz-box-shadow:0 0 10px 2px #ccc;
+	box-shadow:0 0 10px 2px #ccc
+}
+
+.logo {
+	height:100px;
+	padding:10px
+}
+
+.logo > img {
+	height:100px
+}
+
+.header-right {
+	padding:10px;
+	margin-top:10px
+}
+
+.address {
+	padding-bottom:28px
+}
+
+.gateway-nav > li > a {
+	width:100%;
+	padding:6px 12px;
+	border-radius:0;
+	color:#0f1c57
+}
+
+.gateway-nav > li.active > a,.gateway-nav > li.active > a:visited {
+	background-color:#0f1c57
+}
+
+.gateway-nav > li.active > a:hover {
+	background-color:#172a82
+}
+
+.gateway-nav > li {
+	width:100%;
+	margin: 2px 0 !important;
+}
+
+.footer {
+	text-align:right;
+	font-size:small;
+	padding-top:5px;
+	padding-bottom:30px
+}
+
+.cover > img {
+	width:100%;
+	background:#ccc
+}
+
+.content {
+	padding:20px
+}
+
+.portal-link > a,.portal-link > a:visited {
+	background-color:#d43f3a!important;
+	color:#fff!important
+}
+
+.portal-link > a:hover {
+	background-color:#de6764!important
+}
+
+.verral-pic {
+	margin-right:20px
+}
+
+.family-pic {
+	margin-right:20px
+}
+
+.about-text {
+	margin-top:20px;
+	text-align:justify
+}
+
+.logo {
+	text-align:center
+}
+
+.header-right {
+	text-align:center
+}
+
+.centered-pills {
+	text-align:center
+}
+
+.centered-pills ul.nav-pills {
+	display:inline-block
+}
+
+.centered-pills li {
+	display:inline
+}
+
+.centered-pills a {
+	float:left
+}
+
+.index-text {
+	margin-top:20px
+}
+
+.map-overlay {
+	background:transparent;
+	position:relative;
+	width:100%;
+	height:337px;
+	top:337px;
+	margin-top:-337px;
+}
+
+@media only screen and (min-width: 768px) {
+.gateway-container {
+	width:700px
+}
+
+.index-text {
+	min-height:250px;
+	margin:0 20px 0 210px
+}
+
+.verral-pic {
+	float:left
+}
+
+.family-pic {
+	float:right
+}
+
+.about-text {
+	margin-top:0;
+	min-height:280px;
+	margin-right:275px
+}
+
+.gateway-nav > li {
+	width: auto;
+	margin: 2px !important;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+.gateway-container {
+	width:960px
+}
+
+.logo {
+	float:left
+}
+
+.header-right {
+	margin-top:0;
+	text-align:right;
+	float:right
+}
+
+.index-text {
+	margin-right:50px
+}
+
+.header {
+	min-height:100px
+}
+.map-overlay {
+	margin-top:-307px;
+}
+}

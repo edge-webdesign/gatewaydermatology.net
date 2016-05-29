@@ -1,0 +1,31 @@
+<div class="header">
+    <div class="logo">
+        <img src="{{ "/images/logo.png" | prepend: site.baseurl }}">
+    </div>
+    <div class="header-right">
+        <div class="address">
+            <strong>
+                1 South Western Avenue Glens Falls, NY 12801<br />
+                Office: 518-745-5280 / Fax: 518-745-5284
+            </strong>
+        </div>
+        <div class="centered-pills">
+            <ul class="nav nav-pills gateway-nav">
+            {% assign sorted_pages = site.pages | sort:"order" %}
+
+            {% for node in sorted_pages %}
+                {% if page.url == node.url %}
+                    <li class="active"><a href="{{node.url}}">{{ node.nav_title }}</a></li>
+                {% else %}
+                    <li><a href="{{node.url}}">{{ node.nav_title }}</a></li>
+                {% endif %}
+            {% endfor %}
+                <!-- <li><a href="/">Home</a></li> -->
+                <!-- <li><a href="/office">Our Office</a></li> -->
+                <!-- <li><a href="/paperwork">Paperwork</a></li> -->
+                <!-- <li><a href="/resources">Resources</a></li> -->
+                <!-- <li><a href="/about">About Dr. Verral</a></li> -->
+                <li class="portal-link"><a href="https://www.medentmobile.com/portal/index.php?practice_id=836TCf3K" target="_blank">Patient Portal</a></li>
+        </ul></div>
+    </div>
+</div>

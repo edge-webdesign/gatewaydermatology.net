@@ -1,0 +1,46 @@
+---
+layout: base
+nav_title: Home
+title: Home
+order: 1
+---
+
+<div class="cover">
+	<!-- image source: https://adirondackjoe.wordpress.com/2013/05/ -->
+	<img src="images/placid.jpg" title="image source: https://adirondackjoe.wordpress.com/2013/05/">
+</div>
+<div class="content">
+	<div class="text-center"><img class="img-thumbnail verral-pic" src="images/dr_verral.jpg"></div>
+	<div class="index-text">
+		<p>Dr. Stephen C. Verral specializes in general, cosmetic, and surgical dermatology. Our goal at Gateway Dermatology is to offer comprehensive dermatologic care in a friendly, comfortable environment. Please explore this website to learn more about the services available.</p>
+		<p><em>Dr. Verral has received eight blue ribbon awards from Glens Falls Hospital for exceeding expectations in his commitment to excellence.</em></p>
+		<blockquote>
+            <p>"<span id="bc"></span>"</p>
+            <footer><span id="initials"></span></footer>
+		</blockquote>
+	</div>
+</div>
+
+<script>
+    $(function() {
+        var quotes = [
+            "I am writing this e-mail to thank you for helping me with my skin problems. You're a very nice doctor and I appreciate your services. I've had skin problems for years and you were the only doctor to actually prescribe me something that works!!!! Again, thanks and hopefully I WON'T see you soon (because that just means my skin is suffering!)",
+            "Happy New Year! It is a happy new year for me thanks to you. You definitely know what you are doing, and not only that but you also have a great positive attitude and wonderful beside manner. I am so grateful that you came to this area. Thanks Doc, you can be sure I shall recommend you highly.",
+            "Thank you for the excellent care you, and your nursing staff, have provided for me. It's wonderful to see a normal nose!",
+            "Prompt, corteous, explains everything, great staff and convenient hours.",
+            "Dr. Verral is a professional, understanding doctor. I had treatment with him over a 6 month period never once did he wane from his service or personable empathetic demeanor. Just great. I recommend him to everyone!",
+            "Excellent manner with patients. Very competent doctor. Excellent patient care. Also office neat and staff great.",
+            "Dr. Verral is caring and very knowledgable in his field. He is always cheerful and patient. I recommend him to everyone I know.",
+            "Dr. Verral is thorough, with a very gentle manner and a lovely personality. Refreshing!!!",
+            "Dr. Verral is such a welcome addition to Glens Falls. Brains and an awesome bedside manner-doesn't get any better than that!!",
+            "Dr. Verral is very personable, professionable and doesn't treat unless necessary. He runs a very efficient office. He is a great addition to the Glens Falls area.",
+        ];
+
+        var initials = [ "MN","ST","SJ","KD","BF","PW","SS","MF","CA","AB" ];
+
+        var rand = Math.floor(Math.random()*quotes.length);
+
+        $('#bc').text(quotes[rand]);
+        $('#initials').text(initials[rand]);
+    });
+</script>
