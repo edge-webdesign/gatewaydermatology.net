@@ -187,3 +187,14 @@ body {
 	margin-top:-307px;
 }
 }
+
+p.justify {
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
