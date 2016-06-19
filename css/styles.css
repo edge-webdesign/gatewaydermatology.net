@@ -33,7 +33,8 @@ body {
 }
 
 .address {
-	padding-bottom:28px
+	padding-bottom:28px;
+    font-weight: bold;
 }
 
 .gateway-nav > li > a {
@@ -72,8 +73,14 @@ body {
 	padding:20px
 }
 
-.portal-link > a,.portal-link > a:visited {
+.red {
+	color:#d43f3a!important;
+}
+.red-bg {
 	background-color:#d43f3a!important;
+}
+
+.portal-link > a,.portal-link > a:visited {
 	color:#fff!important
 }
 
@@ -185,6 +192,11 @@ body {
 }
 .map-overlay {
 	margin-top:-307px;
+}
+
+.address {
+    float: right;
+    margin-right: 20px;
 }
 }
 
