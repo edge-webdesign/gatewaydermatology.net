@@ -217,3 +217,19 @@ p.justify {
     background-color: #FFF3CE;
 }
 
+.check-in-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.check-in-box > a {
+	background-color:#0f1c57;
+	padding:12px 12px;
+	border-radius:0;
+	color: white;
+}
+
+.check-in-box > a:hover {
+	background-color:#172a82;
+	color: white;
+}
