@@ -7,4 +7,4 @@ cd "$(git rev-parse --show-toplevel)"
 docker run --rm -it \
     -p 4000:4000 \
     -v "$(pwd):/srv/jekyll" \
-    jekyll/jekyll jekyll serve
+    jekyll/jekyll:3 jekyll serve
