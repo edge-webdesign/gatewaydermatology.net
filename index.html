@@ -5,23 +5,31 @@ title: Home
 order: 1
 ---
 
+<div class="memo">
+    Our office is currently booking six months in advance for new patient appointments.
+</div>
+
 <div class="cover">
-	<img src="images/bg_new.jpg" aria-label="Glens Falls Hospital">
+    <img src="images/bg_new.jpg" aria-label="Glens Falls Hospital">
 </div>
 <div class="content">
-	<div class="text-center"><img class="img-thumbnail verral-pic" src="images/dr_verral.jpg" aria-label="Dr. Verral"></div>
-	<div class="index-text">
-		<p>Dr. Stephen C. Verral specializes in general, cosmetic, and surgical dermatology. Our goal at Gateway Dermatology is to offer comprehensive dermatologic care in a friendly, comfortable environment. Please explore this website to learn more about the services available.</p>
-		<p><em>Dr. Verral has received eight blue ribbon awards from Glens Falls Hospital for exceeding expectations in his commitment to excellence.</em></p>
-		<blockquote>
+    <div class="text-center"><img class="img-thumbnail verral-pic" src="images/dr_verral.jpg" aria-label="Dr. Verral">
+    </div>
+    <div class="index-text">
+        <p>Dr. Stephen C. Verral specializes in general, cosmetic, and surgical dermatology. Our goal at Gateway
+            Dermatology is to offer comprehensive dermatologic care in a friendly, comfortable environment. Please
+            explore this website to learn more about the services available.</p>
+        <p><em>Dr. Verral has received eight blue ribbon awards from Glens Falls Hospital for exceeding expectations in
+                his commitment to excellence.</em></p>
+        <blockquote>
             <p>"<span id="bc"></span>"</p>
             <footer><span id="initials"></span></footer>
-		</blockquote>
-	</div>
+        </blockquote>
+    </div>
 </div>
 
 <script>
-    $(function() {
+    $(function () {
         var quotes = [
             "I am writing this e-mail to thank you for helping me with my skin problems. You're a very nice doctor and I appreciate your services. I've had skin problems for years and you were the only doctor to actually prescribe me something that works!!!! Again, thanks and hopefully I WON'T see you soon (because that just means my skin is suffering!)",
             "Happy New Year! It is a happy new year for me thanks to you. You definitely know what you are doing, and not only that but you also have a great positive attitude and wonderful beside manner. I am so grateful that you came to this area. Thanks Doc, you can be sure I shall recommend you highly.",
@@ -35,9 +43,9 @@ order: 1
             "Dr. Verral is very personable, professionable and doesn't treat unless necessary. He runs a very efficient office. He is a great addition to the Glens Falls area.",
         ];
 
-        var initials = [ "MN","ST","SJ","KD","BF","PW","SS","MF","CA","AB" ];
+        var initials = ["MN", "ST", "SJ", "KD", "BF", "PW", "SS", "MF", "CA", "AB"];
 
-        var rand = Math.floor(Math.random()*quotes.length);
+        var rand = Math.floor(Math.random() * quotes.length);
 
         $('#bc').text(quotes[rand]);
         $('#initials').text(initials[rand]);
